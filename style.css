@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    background: rgba(66, 77, 76, 0.432);
+    border: 2px black solid;
+    width: auto;
+    height: 80vh;
+    border-radius: 15px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.637);
+}
+
+.social-media-container {
+    position: fixed;
+    top: 50%;
+    left: calc(100% - 60px);
+    list-style-type: none;
+    padding: 0;
+    transform: translateY(-50%);
+    min-width: 250px;
+}
+
+.social-media {
+	align-items: center;
+	display: flex;
+	transition: transform 1s ease-in-out;
+}
+
+.social-media:hover {
+	transform: translateX(calc(-100% + 60px));
+}
+
+.social-media i {
+	color: #fff;
+	font-size: 20px;
+	padding: 15px;
+	text-align: center;
+	width: 60px;
+}
+
+.social-media a {
+	color: #fff;
+	padding: 0 10px;
+}
+
+.social-media-container {
+	list-style-type: none;
+	padding: 0;
+	position: fixed;
+	top: 50%;
+	left: calc(100% - 60px);
+	transform: translateY(-50%);
+	min-width: 250px;
+}
+
+.social-media.blog {
+	background-color: #e17b77;
+}
+
+.social-media.facebook {
+	background-color: #3b5998;
+}
+
+.social-media.twitter {
+	background-color: #00aced;
+}
+
+.social-media.github {
+	background-color: #333;
+}
+
+.social-media.linkedin {
+	background-color: #007bb6;
+}
